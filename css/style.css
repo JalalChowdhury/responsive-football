@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
  
 
-/* common styles */
+/* common styles or Utilities*/
 body{
    font-family: 'Poppins', sans-serif;
    
@@ -10,6 +10,9 @@ body{
 *{
     margin: 0;
     padding: 0;
+}
+header{
+    background-color: blue;
 }
 main{
     display: flex;
@@ -36,7 +39,52 @@ main{
     background-color: salmon;
     
 }
+hr{
+    color: blue;
+}
+span{
+    color: salmon;
+}
 
+
+/* -----------------------------
+    Header CSS styles
+------------------------------ */
+
+.header-detail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 102px; 
+   
+}
+.header-info{
+       margin-left: 156px;
+       margin-top: 121px;
+       margin-bottom: 169px;
+}
+.header-title{
+    width: 485px;
+    height: 230px;
+    margin-bottom: 27px;
+    
+
+    color: #FFFFFF;
+
+    
+    border: 1px solid red;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 80px;
+}
+
+.header-picture img{
+    width: 556.01px;
+    height: 456px;
+
+    margin-top: 49px;
+    margin-bottom: 86px;
+    margin-right: 140.99;
+}
 
 
 
@@ -142,53 +190,134 @@ main{
 
 
 
+/*  -----------------------------
+    The the lens videos
+------------------------------- */
+
+.top-lens-videos{
+    margin-bottom: 40px;
+} 
+
+#videos-title{
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    padding:5px;
+}
+#videos-info{
+   text-align: center;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    width: 220;
+    padding: 5px;
+}
+.video h5{
+    width: 220px;
+}
+
+
+
+
+
+/* ---------------------------
+    Top News CSS Styles 
+----------------------------- */
+
+.top-news-design{
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+#news-title{
+    font-size: 36px;
+    margin: 5px;
+}
+#news-author{
+    margin-bottom: 7px;
+
+}
+
+
+.top-news{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.news-picture img{
+
+    width: 556.01px;
+    height: 456px;
+
+
+
+}
+
+.news-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /*  ---------------------------
     Footer section Styles
 ----------------------------- */
 .footer-main{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center ;
-   margin-bottom: 63px;
-}
-.footer-design{
-    
-    width: 483.87px;
-    height: 213px;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center ;
+    margin-bottom: 63px;
+ }
+ .footer-design{
+     
+     width: 483.87px;
+     height: 213px;
     
-}
-
-.footer-football img{
-    width: 483.87px;
-    height: 110px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center ;
+     
+ }
+ 
+ .footer-football img{
+     width: 483.87px;
+     height: 110px;
+    
+ }
+ 
+ .footer-icons{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-right: 14px;
+ }
+ .footer-icons a{
+    text-decoration: none;
+    
+    border-radius: 40%;
+ }
+ 
+ .footer-icons a>i{
+     color: gray;
+    
    
-}
-
-.footer-icons{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 14px;
-}
-.footer-icons a{
-   text-decoration: none;
-   
-   border-radius: 40%;
-}
-
-.footer-icons a>i{
-    color: gray;
-   
-  
-    margin-left: 14px;
-    font-size: 20px;
-}
-
+     margin-left: 14px;
+     font-size: 20px;
+ }
+ 
+ 
 
 
