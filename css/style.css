@@ -1,8 +1,12 @@
-/* fonts */
+/* -----------
+    Fonts 
+--------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
  
 
-/* common styles or Utilities*/
+/* ----------------------------------
+    common styles or Utilities
+----------------------------------- */
 body{
    font-family: 'Poppins', sans-serif;
    
@@ -129,7 +133,11 @@ span{
     
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+    
 }
+
+
 
 .player-picture img{
     width: 300px;
@@ -346,40 +354,46 @@ span{
 --------------------------------------------
 ------------------------------------------- */
 
-/*--------------------------------------
-     Media Query Use For Mobile version
----------------------------------------*/
+/*------------------------------------------------
+     Media Query Use For Responsive Mobile version
+--------------------------------------------------*/
 
 @media only screen and (max-width:688px){
-    
+
+    /* initialize container for mobile resposive */
     .container{
         width: 100%;
-        margin-left: 15px;
-        margin-right: 15px;
+        
     }
+     /* full width use for single grid column */
     .header-detail,.players,.highlights,.videos,.top-news{
         grid-template-columns: repeat(1,1fr);
         grid-gap: 5px;
+        align-items: left;
     }
     .header-detail,.players,.highlights,.videos,.top-news{
         flex-direction: column;
     }
     
    
-   
+    /* common margin for left and right using style */
     .header-info,.header-picture,.player,.top-news-design{
           margin-left: 15px;
           margin-right: 15px;
         
            
     }
+    /* common margin for bottom using style */
     .header-design,.players-design,.highlights-design,.top-lens-videos{
         margin-bottom: 25px;
     }
+    /* common margin for top and bottom useing styles */
+
     .header-info,.header-picture,.top-news-design{
         margin-top: 25px;
         margin-bottom: 25px;
     }
+    /* width full use for a single column */
     .header-title,.header-picture img,.player,.player-picture img,.player-detail,.highlight,.highlight img,.video,.news-picture img,.footer-football img,.footer-icons{
         width: 98% ;
     }
@@ -389,13 +403,20 @@ span{
         font-size: 36px;
         line-height: 50px;
     }
-    
-    
+
+    /* footer design*/
+    .footer-main{
+        display: block;
+        
+        
+        margin-bottom: 25px;
+     }
+     .footer-design{
+         display: block;
+         
+         
+     } 
     
     
     
 }
-
- 
-
-
