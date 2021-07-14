@@ -50,7 +50,9 @@ span{
 /* -----------------------------
     Header CSS styles
 ------------------------------ */
-
+.header-design{
+    margin-bottom: 72px;
+}
 .header-detail{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -70,11 +72,14 @@ span{
 
     color: #FFFFFF;
 
-    
-    border: 1px solid red;
     font-weight: bold;
     font-size: 32px;
     line-height: 80px;
+    transition: width 1s,height 1s,transform 1s;
+}
+.header-title :hover{
+   transform: scale(1.25);
+   
 }
 
 .header-picture img{
@@ -84,6 +89,14 @@ span{
     margin-top: 49px;
     margin-bottom: 86px;
     margin-right: 140.99;
+    transition: width 1s,height 1s,transform 1s;
+}
+.header-picture img:hover{
+    width: 580px;
+    height: 490px;
+    transform: rotate(60deg);
+
+   
 }
 
 
