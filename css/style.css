@@ -62,7 +62,12 @@ span{
 .header-info{
        margin-left: 156px;
        margin-top: 121px;
+    
        margin-bottom: 169px;
+}
+.header-font{
+    font-size: 64px;
+    line-height: 80px;
 }
 .header-title{
     width: 485px;
@@ -73,14 +78,15 @@ span{
     color: #FFFFFF;
 
     font-weight: bold;
-    font-size: 32px;
-    line-height: 80px;
+    
+    
     transition: width 1s,height 1s,transform 1s;
 }
 .header-title :hover{
    transform: scale(1.25);
    
 }
+
 
 .header-picture img{
     width: 556.01px;
@@ -231,7 +237,8 @@ span{
 .video{
     display: flex;
     flex-direction: column;
-    width: 220;
+    width: 225px;
+    height: 200px;
     padding: 5px;
 }
 .video h5{
@@ -331,6 +338,64 @@ span{
      font-size: 20px;
  }
  
+
+
+ /* -----------------------------------------
+ -------------------------------------------
+    media Query use for Responsive in CSS
+--------------------------------------------
+------------------------------------------- */
+
+/*--------------------------------------
+     Media Query Use For Mobile version
+---------------------------------------*/
+
+@media only screen and (max-width:688px){
+    
+    .container{
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .header-detail,.players,.highlights,.videos,.top-news{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px;
+    }
+    .header-detail,.players,.highlights,.videos,.top-news{
+        flex-direction: column;
+    }
+    
+   
+   
+    .header-info,.header-picture,.player,.top-news-design{
+          margin-left: 15px;
+          margin-right: 15px;
+        
+           
+    }
+    .header-design,.players-design,.highlights-design,.top-lens-videos{
+        margin-bottom: 25px;
+    }
+    .header-info,.header-picture,.top-news-design{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .header-title,.header-picture img,.player,.player-picture img,.player-detail,.highlight,.highlight img,.video,.news-picture img,.footer-football img,.footer-icons{
+        width: 98% ;
+    }
+    
+
+    .header-font{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    
+    
+    
+    
+    
+}
+
  
 
 
